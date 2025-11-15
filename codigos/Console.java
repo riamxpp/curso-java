@@ -12,7 +12,10 @@ public class Console {
     String sobrenome = entrada.nextLine();
     System.out.print("Informe sua idade: ");
     int idade = entrada.nextInt();
+    entrada.nextLine(); // Pega o /n do buffer
     
     System.out.printf("\n\n%s %s tem %d anos", nome, sobrenome, idade);
+
+    entrada.close();
   }
 }
